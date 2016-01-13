@@ -1146,12 +1146,14 @@ ImageData2D.nativeJSFilter = {
   }/*,'Solarise','Similar to invert but only inverts if a color value is above or below a set theshold. If the boolean is true then values ABOVE the theshold will be inverted'*/,
 };
 
-ImageData2D.canvas0 = document.createElement('canvas');
-ImageData2D.canvas0.style.display = 'none';
-document.body.appendChild(ImageData2D.canvas0);
-ImageData2D.ctx0 = ImageData2D.canvas0.getContext('2d');
+document.onload(function() {
+  ImageData2D.canvas0 = document.createElement('canvas');
+  ImageData2D.canvas0.style.display = 'none';
+  document.body.appendChild(ImageData2D.canvas0);
+  ImageData2D.ctx0 = ImageData2D.canvas0.getContext('2d');
 
-ImageData2D.canvas1 = document.createElement('canvas');
-ImageData2D.canvas1.style.display = 'none';
-document.body.appendChild(ImageData2D.canvas1);
-ImageData2D.ctx1 = ImageData2D.canvas1.getContext('2d');
+  ImageData2D.canvas1 = document.createElement('canvas');
+  ImageData2D.canvas1.style.display = 'none';
+  document.body.appendChild(ImageData2D.canvas1);
+  ImageData2D.ctx1 = ImageData2D.canvas1.getContext('2d');
+});
