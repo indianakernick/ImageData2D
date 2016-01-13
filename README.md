@@ -2,7 +2,7 @@
 
 `ImageData2D` is a raster image class kind of like JavaScript's native `ImageData` BUT BETTER! It has built-in algorithms for lines, circles, rectangles, curves and even path finding (for some reason). It has a file format that can easily be embeded (because its a typed array). The image itself is a `Uint32Array`. This means that each pixel is a single element which means that operations with `ImageData2D` are faster than the same operations with `ImageData`.
 
-#Documenation
+#Documentation
 
 ###Getting started
 You can create a `new ImageData2D` like so
