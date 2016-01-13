@@ -144,5 +144,6 @@ Object.prototype.clone = function() {
     o[i] = typeof this[i] == 'object' ? this[i].clone() : this[i];
   }
   return o;
-};```
+};
+```
 It recursively copies any object BUT doesn’t copy the class but if that class has it’s own `clone` function it can be used with this to preserve the class.
